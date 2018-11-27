@@ -1,0 +1,6 @@
+<div *ngFor="let user of users$ | async">
+  {{user.id}}
+  {{user.first_name}}
+  {{user.last_name}}
+</div>
+<button mat-button (click)="loadMorePeople()">LOAD MORE FUCKERS</button>
